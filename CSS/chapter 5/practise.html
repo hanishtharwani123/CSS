@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar{
+            height: 30vh;
+            background-color:darkcyan;
+            position: sticky;
+            top: 0;
+        }
+        .navbar ul{
+            list-style: circle;
+        }
+        .navbar ul li{
+            color: white;
+            font-size: 20px;
+            /* display: inline-block; */
+            position: relative;
+            top: 34px;
+            padding-left: 20px;
+            
+        }
+        .container{
+            background-color: red;
+            min-height: 2333px;
+            position: relative;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container"></div>
+</body>
+</html>

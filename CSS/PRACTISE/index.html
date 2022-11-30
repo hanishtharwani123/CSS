@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        height: 100px;
+        background-color: black;
+      }
+      .header ul {
+        color: white;
+        position: relative;
+        top: 65px;
+        left: 845px;
+        text-decoration: none;
+      }
+      .header ul li {
+        display: inline-block;
+        padding: 1px 11px 45px 66px;
+      }
+      .header ul li a{
+        color: white;
+        text-decoration: none;
+      }
+      .header ul li::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: #ec1607;
+        display: block;
+        margin: auto;
+        transition: width 0.5s ease-in-out;
+      }
+      .header ul li:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

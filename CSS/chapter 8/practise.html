@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            background-color: aqua;
+        }
+        .box{
+            height: 0.7vh;
+            background-color: red;
+            animation: hanish 3s ease-in-out 0s 1 reverse;
+        }
+        @keyframes hanish {
+            from{
+                width: 100vw;
+            }
+            to{
+                width: 0vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
